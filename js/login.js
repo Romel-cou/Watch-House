@@ -24,7 +24,7 @@ document.getElementById('submit-btn').addEventListener('click', function(){
         if(data.email === userEmail && data.pass === userPassword) {
             console.log("credentials match");
             isMatch = true;
-            window.location.href = '../index.html'
+            window.location.href = '../main.html'
           sessionStorage.setItem('email', userEmail)
           sessionStorage.setItem('pass', userPassword)
           sessionStorage.setItem('name', userName)
