@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+
+    <link rel="stylesheet" href="./css/login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>Account</h2>
+      </div>
+      <form
+        method="POST"
+        id="form"
+        class="form"
+        onsubmit="event.preventDefault(); "
+      >
+        <div class="form-control">
+          <label for="username">Email</label>
+          <input
+            type="email"
+            placeholder="please enter your email"
+            id="email"
+            name="email"
+            required
+          />
+        </div>
+        <div class="form-control">
+          <label for="username">Password</label>
+          <input
+            type="password"
+            placeholder="please enter your phone number"
+            id="pass"
+            name="pass"
+            minlength="8"
+            maxlength="11"
+            required
+          />
+        </div>
+
+        <button id="submit-btn">Login</button>
+      </form>
+    </div>
+    <script src="./js/login.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </body>
+</html>

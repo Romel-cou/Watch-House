@@ -1,0 +1,125 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+      />
+    </head>
+    <link rel="stylesheet" href="./src/style.css" />
+    <link rel="stylesheet" href="./invoice/print.css">
+    <link rel="stylesheet" href="./invoice/style.css">
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      
+    </head>
+    <body>
+      <!-- <div class="navbar">
+        <a href="index.html">
+          <h2>Watch Store</h2>
+        </a>
+
+        <a href="cart.html">
+          <div class="cart">
+            <i class="bi bi-cart2"></i>
+            <div id="cartAmount" class="cartAmount">0</div>
+          </div>
+        </a>
+      </div> -->
+      <div id="total-amnt"></div>
+        
+      <div id="page-wrap">
+        <textarea id="header">INVOICE</textarea>
+
+        <div id="identity">
+          <span id="address">
+          
+        </span
+          >
+
+          <div id="logo">
+            <div id="logoctr">
+              <a href="javascript:;" id="change-logo" title="Change logo"
+                >Change Logo</a
+              >
+              <a href="javascript:;" id="save-logo" title="Save changes">Save</a>
+              
+              <a href="javascript:;" id="delete-logo" title="Delete logo"
+                >Delete Logo</a
+              >
+              <a href="javascript:;" id="cancel-logo" title="Cancel changes"
+                >Cancel</a
+              >
+            </div>
+
+            <div id="logohelp">
+              <input id="imageloc" type="text" size="50" value="" /><br />
+              
+            </div>
+            
+          </div>
+        </div>
+
+        <div id="customer">
+          
+
+          <table id="meta">
+            <tr>
+              <td class="meta-head">Invoice #</td>
+              <td><span id="invoice_no"></span></td>
+            </tr>
+            <tr>
+              <td class="meta-head">Invoice Date</td>
+              <td><span id="invoice_date"></span></td>
+            </tr>
+          </table>
+        </div>
+
+        <table id="items">
+          
+          <tr>
+            <th class="text-center" style="max-width: 50px;">#</th>
+            <th style="text-align: left; max-width: 50px;">Item</th>
+            <th style="text-align: left;">Description</th>
+            <th>Unit Cost</th>
+            <th>Quantity</th>
+            <th>Price</th>
+          </tr>
+          
+          <tbody id="tableData"></tbody>
+
+          <tr>
+            <td colspan="3" class="blank"></td>
+            <td colspan="2" class="total-line">Subtotal</td>
+            <td class="total-value text-center"><div id="subtotal"></div></td>
+          </tr>
+          <tr>
+            <td colspan="3" class="blank"></td>
+            <td colspan="2" class="total-line">VAT & Taxes</td>
+            <td class="total-value text-center">2.5%</td>
+          </tr>
+
+          <tr>
+            <td colspan="3" class="blank"></td>
+            <td colspan="2" class="total-line balance">Total</td>
+            <td class="total-value balance text-center"><div class="due"><div id="total"></div></div></td>
+          </tr>
+          
+        </table>
+
+        
+
+        
+      </div>
+
+      <script src="src/Data.js"></script>
+      <script src="./src/checkout.js"></script>
+    <!-- <script src="src/cart.js"></script> -->
+    </body>
+  </html>
+
+
